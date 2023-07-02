@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "00ca72ba-87c5-41b3-bc44-dc74caa75035",
+      "username": "jd",
+      "password": "password"
+    },
+    {
+      "id": "f2e1ad39-710d-42e1-b696-683b3c5ac91a",
+      "username": "bob",
+      "password": "password"
+    }
+  ],
+  "logs": [
+    {
+      "id": "feba555d-0958-477e-9107-70e8020cf125",
+      "user_id": "f2e1ad39-710d-42e1-b696-683b3c5ac91a",
+      "title": "bob's adventure",
+      "location": "Boston"
+    }
+  ]
+}

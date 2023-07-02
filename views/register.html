@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Log</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="flex-column justify-center align-center">
+
+  <h1>Register</h1>
+
+  <form class="flex-column" action="/register" method="POST">
+    <input name="username" class="form-input" type="text" placeholder="Type your username" required>
+    <input name="password" class="form-input" type="password" placeholder="Type your password" required>
+    <button class="btn btn-dark">Submit</button>
+    <a href="/login" class="text-center text-dark p-2">- Log In Here -</a>
+  </form>
+</body>
+
+</html>

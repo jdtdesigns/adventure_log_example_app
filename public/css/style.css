@@ -1,0 +1,23 @@
+/* RESETS */
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* CUSTOM STYLES */
+body.landing {
+  background-image: linear-gradient(rgba(0, 11, 53, 0.25), rgba(0, 0, 0, .25)), url('/images/landing-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.start-btn {
+  color: #555 !important;
+}
