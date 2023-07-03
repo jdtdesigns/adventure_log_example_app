@@ -16,7 +16,7 @@ router.get('/register', (clientReq, serverRes) => {
   serverRes.sendFile(path.join(__dirname, '../views/register.html'));
 });
 
-// Show the register page
+// Show the dashboard page
 router.get('/dashboard', (clientReq, serverRes) => {
   serverRes.sendFile(path.join(__dirname, '../views/dashboard.html'));
 });
