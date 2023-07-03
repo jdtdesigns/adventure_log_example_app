@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Log</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="p-4">
+  <nav class="flex-row justify-flex-end dashboard-nav">
+    <a href="/adventures" class="btn text-dark btn-border">View All User Adventures</a>
+    <a href="/logout" class="btn text-dark btn-border logout">Log Out</a>
+  </nav>
+
+  <div class="container flex-column justify-center align-center mt-5">
+    <h1 id="form-header" class="mt-5">Add Your Adventure</h1>
+
+    <form id="adventure-form" class="flex-column mb-5">
+      <input id="title-input" type="text" class="form-input" placeholder="Enter Your Title" required>
+      <input id="location-input" type="text" class="form-input" placeholder="Enter Your Location" required>
+
+      <button class="btn btn-border">Submit</button>
+    </form>
+  </div>
+
+  <h2 class="text-center mt-5">Your Adventure Log</h2>
+
+  <div class="adventures mt-5 pb-4"></div>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+
+</html>

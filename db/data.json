@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "4c6bcde8-8167-493f-8453-b54331c3cfbd",
+      "username": "jd",
+      "password": "password"
+    },
+    {
+      "id": "484cdc43-a21e-457c-8223-da7f295f514e",
+      "username": "bob",
+      "password": "password"
+    }
+  ],
+  "adventures": [
+    {
+      "id": "48865807-f8e8-46a1-85e3-feed8029933d",
+      "createdOn": 1688347746,
+      "title": "My awesome trip",
+      "location": "Boston",
+      "user_id": "4c6bcde8-8167-493f-8453-b54331c3cfbd"
+    },
+    {
+      "id": "d50b26d8-49fe-445a-ace5-f934f5d63212",
+      "createdOn": 1688347771,
+      "title": "Bob's trip",
+      "location": "Atlanta",
+      "user_id": "484cdc43-a21e-457c-8223-da7f295f514e"
+    }
+  ]
+}

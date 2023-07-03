@@ -1,0 +1,49 @@
+/* RESETS */
+html, body {
+  height: 100%;
+}
+
+body.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(/images/hiking-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 1px solid #ccc !important;
+}
+
+/* CUSTOM STYLES */
+.btn-border {
+  border: 2px solid #444;
+  background: none !important;
+}
+
+.btn-border:hover {
+  background: #eee !important;
+}
+
+.dashboard-nav a:first-child {
+  margin-right: 20px !important;
+}
+
+.card button:first-child {
+  margin-right: 15px !important;
+}
+
+p.error {
+  display: none;
+  color: red;
+}
+
+p.error.show {
+  display: initial;
+}
