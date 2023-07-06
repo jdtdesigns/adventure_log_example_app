@@ -36,8 +36,10 @@ function handleSubmit(e) {
 function isAuthenticated() {
   const user = localStorage.getItem('adventure_user');
 
-  if (user) window.location = '/dashboard';
+  if (user) return window.location = '/dashboard';
+
+  form.addEventListener('submit', handleSubmit);
 }
 
 isAuthenticated();
-form.addEventListener('submit', handleSubmit);
+

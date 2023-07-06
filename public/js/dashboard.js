@@ -63,12 +63,6 @@ function logout(e) {
   window.location = '/adventures';
 }
 
-function isAuthenticated() {
-  const user = localStorage.getItem('adventure_user');
-
-  if (!user) window.location = '/login';
-}
-
 function editAdventure(adventure_id) {
   fetch(`/api/adventure/${adventure_id}`, {
     method: 'PUT',
@@ -104,12 +98,21 @@ function deleteAdventure(adventure_id) {
   }).then(res => window.location.reload());
 }
 
-isAuthenticated();
-getAdventures();
-logoutBtn.addEventListener('click', logout);
-form.addEventListener('submit', handleSubmit);
-output.addEventListener('click', (e) => {
-  if (e.target.innerText === 'Edit') showEditView(e.target.dataset.id);
+function isAuthenticated() {
+  const user = localStorage.getItem('adventure_user');
 
-  if (e.target.innerText === 'Delete') deleteAdventure(e.target.dataset.id);
-})
+  if (!user) return window.location = '/login';
+
+
+  getAdventures();
+
+  logoutBtn.addEventListener('click', logout);
+  form.addEventListener('submit', handleSubmit);
+  output.addEventListener('click', (e) => {
+    if (e.target.innerText === 'Edit') showEditView(e.target.dataset.id);
+
+    if (e.target.innerText === 'Delete') deleteAdventure(e.target.dataset.id);
+  })
+}
+
+isAuthenticated();
